@@ -6,7 +6,7 @@
 .nav {
     display: flex;
     align-items: center;
-    height: 70px;
+    padding-top: 15px;
 }
 
 .logo-area {
@@ -22,10 +22,10 @@
 }
 
 .header-lists li {
+    list-style: none;
     margin: 0 15px;
 }
 
 .header-lists li a {
     color: white;
-    font-size: 16px;
 }

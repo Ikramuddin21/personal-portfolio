@@ -1,0 +1,45 @@
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+
+.about-content-left {
+    width: 50%;
+}
+
+.about-content-left img {
+    width: 75%;
+}
+
+.about-content-right {
+    width: 50%;
+}
+
+.about-content-right h2 {
+    font-size: 35px;
+    color: tomato;
+}
+
+.about-content-right p {
+    line-height: 27px;
+}
+
+.about-me-area h2 {
+    margin-bottom: 15px;
+}
+
+.about-education {
+    margin-top: 10px;
+}
+
+.about-training-area {
+    margin-top: 35px;
+}
+
+.about-training-area ul {
+    margin-top: 15px;
+    margin-left: 20px;
+}

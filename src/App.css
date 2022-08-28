@@ -5,11 +5,9 @@
 }
 
 body {
-  font-size: 16px;
-}
-
-li {
-  list-style: none;
+  font-size: 18px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/banner.jpg");
+  background-size: cover;
 }
 
 a {
@@ -34,4 +32,8 @@ button {
 
 .highlight {
   color: tomato;
+}
+
+.highlight2 {
+  color: lightgray;
 }
