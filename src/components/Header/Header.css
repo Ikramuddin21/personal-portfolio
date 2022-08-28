@@ -1,0 +1,31 @@
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-area {
+    flex-grow: 1;
+}
+
+.logo-area img {
+    width: 55px;
+}
+    
+.header-lists {
+    display: flex;
+}
+
+.header-lists li {
+    margin: 0 15px;
+}
+
+.header-lists li a {
+    color: white;
+    font-size: 16px;
+}
