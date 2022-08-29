@@ -4,10 +4,10 @@ import AboutContent from "../AboutContent/AboutContent";
 
 const About = () => {
   return (
-    <>
+    <div>
       <Header />
       <AboutContent />
-    </>
+    </div>
   );
 };
 

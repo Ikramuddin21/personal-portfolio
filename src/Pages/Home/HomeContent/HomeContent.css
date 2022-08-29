@@ -1,6 +1,7 @@
 .home-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
   color: white;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -11,7 +12,7 @@
 
 .home-content img {
     width: 220px;
-    border: 8px solid #232323;
+    border: 9px solid #232323;
     border-radius: 200px;
 }
 
@@ -23,5 +24,4 @@
 .home-content h2 {
     font-size: 28px;
     margin-top: 10px;
-    /* text-transform: uppercase; */
 }

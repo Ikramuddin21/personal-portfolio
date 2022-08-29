@@ -1,11 +1,10 @@
 import React from "react";
 import aboutImg from "../../../images/ikram.png";
-import {Link} from "react-router-dom";
 import "./AboutContent.css";
 
 const AboutContent = () => {
   return (
-    <section className="about-content">
+    <div className="about-content">
       <div className="about-content-left">
         <img src={aboutImg} alt="" />
       </div>
@@ -21,8 +20,8 @@ const AboutContent = () => {
             the process of learning to improve my development skills.
           </p>
           <p className="about-education">
-            Completed Diploma in Engineering 2022 and my subject was computer
-            technology.
+            Completed Diploma in Engineering 2022 and my subject was Computer
+            Technology.
           </p>
         </div>
         <div className="about-training-area">
@@ -33,11 +32,18 @@ const AboutContent = () => {
           </ul>
         </div>
         <div className="about-address">
-            <h4>Address : Purana Paltan, Dhaka</h4>
-            <h4>Mail : <Link to="">ikramuddin2122@gmail.com</Link></h4>
+          <h4>Address : Purana Paltan, Dhaka</h4>
+          <h4>
+            Mail :
+            <a target="_blank" href="https://gmail.com" rel="noreferrer"> ikramuddin2122@gmail.com</a>
+          </h4>
+          <h4>Phone : 01865503788</h4>
         </div>
+        <a className="download-cv" target="_blank" href="https://drive.google.com/file/d/1oqjUwRKRnXgV9jWyHrYFQ94WG3JS4zov/view" rel="noreferrer">
+          <button>Download CV</button>
+        </a>
       </div>
-    </section>
+    </div>
   );
 };
 

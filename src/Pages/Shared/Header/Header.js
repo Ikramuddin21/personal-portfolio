@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../../../images/logo.png';
 import './Header.css';
 
 const Header = () => {
+  const [stickyStyle, setStickyStyle] = useState(false);
+
+ // handle scrollY and show header
+ const handleStickyHeader = () => {
+  if(window.scrollY > 50) {
+    setStickyStyle(true);
+  }
+  else {
+    setStickyStyle(false);
+  }
+ };
+
+ window.addEventListener("scroll", handleStickyHeader);
+
   return (
-    <header className="header">
+    <header className={`${stickyStyle ? "sticky" : ""}`}>
       <nav className="nav">
         <div className="logo-area">
           <Link to="/">

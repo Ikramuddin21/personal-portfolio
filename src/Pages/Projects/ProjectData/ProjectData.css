@@ -1,0 +1,68 @@
+.project-data {
+    max-width: 500px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    background-color: rgba(42, 41, 41, 0.9);
+}
+
+.project-data img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-data-text {
+    margin-top: 15px;
+}
+
+.project-data-text .project-name {
+    font-size: 25px;
+}
+
+.project-data-text .type {
+    margin-top: 10px;
+}
+
+.technologies {
+    margin-top: 10px;
+}
+
+.technologies span {
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.project-links button {
+    background: none;
+    border: none;
+}
+
+.project-links a {
+    border: 1px solid transparent;
+    padding: 10px 25px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 50px;
+    color: black;
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+.project-links a:hover {
+    border: 1px solid tomato;
+    background-color: transparent;
+}
+
+.project-links button:hover a {
+    color: white;
+}

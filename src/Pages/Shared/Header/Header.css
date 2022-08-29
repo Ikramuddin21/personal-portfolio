@@ -1,12 +1,16 @@
-.header {
+.nav {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.nav {
+    padding: 0 20px;
+    height: 70px;
     display: flex;
     align-items: center;
-    padding-top: 15px;
+}
+
+.sticky {
+    background-color: rgba(14, 13, 13, 0.9);
+    position: sticky;
+    top: 0;
 }
 
 .logo-area {
