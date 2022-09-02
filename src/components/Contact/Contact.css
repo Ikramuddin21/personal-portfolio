@@ -1,0 +1,28 @@
+.contact {
+    margin-top: 80px;
+    padding: 0 20px;
+    color: lightgray;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.contact-wrapper h4 {
+    margin-top: 15px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: rgba(42, 41, 41, 0.9);
+    
+}
+
+.contact-wrapper h4 a {
+    color: lightgray;
+}
