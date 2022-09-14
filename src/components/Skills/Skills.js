@@ -11,7 +11,7 @@ const Skills = () => {
   }, []);
   
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div>
         <h2 className="skills-heading">My Skills</h2>
         <div className="skills-data-wrapper">

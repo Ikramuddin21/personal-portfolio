@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import menuIcon from "../../images/menu-icon.svg";
+import closeIcon from "../../images/close-icon.svg";
 import "./Header.css";
 
 const Header = () => {
@@ -11,7 +10,7 @@ const Header = () => {
 
   // handle scrollY and show header
   const handleStickyHeader = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 20) {
       setStickyStyle(true);
     } else {
       setStickyStyle(false);
@@ -20,37 +19,39 @@ const Header = () => {
 
   window.addEventListener("scroll", handleStickyHeader);
 
-  // mobile menu item show
-  useEffect(() => {
-    window.addEventListener("mousedown", () => setMenuOpen(false));
-  }, []);
-
   return (
-    <div className={`${stickyStyle ? "sticky" : ""}`}>
+    <div className={`${menuOpen ? "header" : ""} ${stickyStyle ? "sticky" : ""}`}>
       <nav className="nav">
         <div className="logo-area">
-          <Link to="">
-            <img src={logo} alt="" />
-          </Link>
+          <a href="#home">
+            <img onClick={() => setMenuOpen(false)} src={logo} alt="" />
+          </a>
         </div>
         <ul className={`header-lists ${menuOpen ? "show-lists" : ""}`}>
           <li>
-            <Link to="">Home</Link>
+            <a onClick={() => setMenuOpen(false)} href="#home">Home</a>
           </li>
           <li>
-            <Link to="">About</Link>
+            <a onClick={() => setMenuOpen(false)} href="#about">About</a>
           </li>
           <li>
-            <Link to="">Skills</Link>
+            <a onClick={() => setMenuOpen(false)} href="#skills">Skills</a>
           </li>
           <li>
-            <Link to="">Projects</Link>
+            <a onClick={() => setMenuOpen(false)} href="#projects">Projects</a>
           </li>
           <li>
-            <Link to="">Contact</Link>
+            <a onClick={() => setMenuOpen(false)} href="#contact">Contact</a>
           </li>
         </ul>
-        <img  onClick={() => setMenuOpen(true)} className="menu-icon" src={menuIcon} alt="" />
+        {/* mobile menu */}
+        <div className="mobile-menu">
+          {
+            menuOpen ?
+              <img onClick={() => setMenuOpen(false)} className="close-icon" src={closeIcon} alt="" /> :
+              <img onClick={() => setMenuOpen(true)} className="menu-icon" src={menuIcon} alt="" />
+          }
+        </div>
       </nav>
     </div>
   );

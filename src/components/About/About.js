@@ -4,7 +4,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h2 className="about-heading">About Me</h2>
       <div className="about-wrapper">
         <div className="about-left">
@@ -40,7 +40,7 @@ const About = () => {
           <a
             className="download-cv"
             target="_blank"
-            href="https://drive.google.com/file/d/1gWIAg8VtiCjZXGRftoZrISDgPIa7BfbD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ut7RM0arwJxw_ww3Rpt5WZZuSNvOy2g3/view?usp=sharing"
             rel="noreferrer"
           >
             <button>Download CV</button>

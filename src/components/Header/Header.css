@@ -1,5 +1,6 @@
 .sticky {
-    background-color: rgba(14, 13, 13, 0.9);
+    background-color: rgba(13, 14, 14, 0.5);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
 }
@@ -11,6 +12,7 @@
     height: 70px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .logo-area {
@@ -25,7 +27,7 @@
     display: flex;
 }
 
-.menu-icon {
+.mobile-menu {
     display: none;
 }
 
@@ -39,6 +41,13 @@
 
 /* media query */
 @media only screen and (max-width: 570px) {
+    .header {
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        background-color: black;
+    }
+
     .nav {
         position: relative;
     }
@@ -47,22 +56,24 @@
       display: none;
     }
 
-    .menu-icon {
+    .mobile-menu {
         display: block;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        margin-right: 15px;
     }
 
     .show-lists {
         display: block;
         position: absolute;
         top: 70px;
-        left: 0;
-        width: 30%;
-        z-index: 1;
-        background-color: rgba(14, 13, 13, 0.9);
+        left: 5px;
     }
 
     .show-lists li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
   }

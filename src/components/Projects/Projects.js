@@ -12,7 +12,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div>
         <h2 className="projects-heading">Projects</h2>
         <div className="projects-data-wrapper">
